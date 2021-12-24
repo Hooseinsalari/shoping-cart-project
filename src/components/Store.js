@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { ProductsContext } from '../context/ProductsContextProvider';
 import Product from './shared/Product';
 
@@ -8,7 +8,7 @@ import styles from "./Store.module.css";
 const Store = () => {
 
     const products = useContext(ProductsContext)
-
+ 
     return (
         <div className={styles.container}>
             {
@@ -16,7 +16,7 @@ const Store = () => {
                     key={product.id}
                     productData={product}
                 />)
-            }        
+            }           
         </div>
     );
 };
