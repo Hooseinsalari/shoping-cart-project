@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { ProductsContext } from '../context/ProductsContextProvider';
-import Product from './shared/Product';
-import { Carousel } from '@trendyol-js/react-carousel';
 
+// context
+import { ProductsContext } from '../context/ProductsContextProvider';
+
+// component
+import Product from './shared/Product';
 
 // style
 import styles from "./Store.module.css";

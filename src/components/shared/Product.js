@@ -26,17 +26,7 @@ const Product = ({ productData }) => {
       <div className={styles.cartFooter}>
         <Link className={styles.detailsLink} to={`/details/${productData.id}`}>Details</Link>
         <div>
-          {isInCart(state, productData.id) ? (
-            <button className={styles.button} onClick={() => dispatch({ type: "INCREASE", payload: productData })}>
-              +
-            </button>
-          ) : (
-            <button
-            className={styles.addBtn} onClick={() => dispatch({ type: "ADD_ITEM", payload: productData })}
-            >
-              Add to cart
-            </button>
-          )}
+          
           {quantityCount(state, productData.id) === 1 && (
             <button
             className={styles.deleteButton}
@@ -44,15 +34,30 @@ const Product = ({ productData }) => {
                 dispatch({ type: "REMOVE_ITEM", payload: productData })
               }
             >
-              <img src={trash} style={{width:"13px"}} />
+              <img src={trash} style={{width:"14px", fontWeight:"bold"}} />
             </button>
           )}
+           
           {quantityCount(state, productData.id) > 1 && (
             <button
             className={styles.button}
               onClick={() => dispatch({ type: "DECREASE", payload: productData })}
             >
-              -
+              <span>-</span>
+            </button>
+          )}
+          {
+            quantityCount(state, productData.id) > 0 && <span>{quantityCount(state, productData.id)}</span>
+          }
+         {isInCart(state, productData.id) ? (
+            <button className={styles.button} onClick={() => dispatch({ type: "INCREASE", payload: productData })}>
+              <span>+</span>
+            </button>
+          ) : (
+            <button
+            className={styles.addBtn} onClick={() => dispatch({ type: "ADD_ITEM", payload: productData })}
+            >
+              Add to cart
             </button>
           )}
         </div>

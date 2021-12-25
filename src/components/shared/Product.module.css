@@ -1,8 +1,15 @@
 .cartContainer {
-    background-color: darkgrey;
+    background-color: #fff;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cartContainer:hover {
+    transform:translateY(-4px);
+    transition: all 0.3s ease-in-out;
 }
 
 .information {
@@ -26,8 +33,9 @@
 }
 
 .detailsLink {
-    color: #fff;
+    color: #27ae60;
     text-decoration: none;
+    font-size: 17px;
 }
 
 .button {
@@ -41,6 +49,13 @@
     cursor: pointer;
     font-size: 18px;
     width: 30px;
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.button span {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .deleteButton {
@@ -51,9 +66,11 @@
     border-radius: 5px;
     text-align: center;
     cursor: pointer;  
-    height: 28px;
+    height: 29px;
     width: 31px;
-    font-size: 18px;
+    font-size: 20px;
+    background-color: #27ae60;
+    color: #fff;
 }
 
 .addBtn {
@@ -66,4 +83,10 @@
     padding: 3px 5px;
     cursor: pointer;
     font-size: 17px;
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.addBtn:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
 }
