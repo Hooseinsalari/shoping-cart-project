@@ -7,17 +7,23 @@ import { cartContext } from '../../context/CartContextProvider';
 // icons
 import cart from "../../svg/cart.svg"
 
+// styles
+import styles from "./Navbar.module.css";
+
 const Navbar = () => {
 
     const {state} = useContext(cartContext)
 
     return (
-        <div>
-            <div>
-                <Link to="/store">Product</Link>
-                <div>
-                    <Link to="/shoppingCart"><img src={cart} alt='icon' style={{width:"30px"}} /></Link>
-                    <span>{state.itemsCounter}</span>
+        <div className={styles.navContainer}>
+            <div className={styles.container}>
+                <div className={styles.linkContainer}>
+                    <Link to="/" className={styles.link}>Home</Link>
+                    <Link to="/store" className={styles.link}>Product</Link>
+                </div>
+                <div className={styles.cart}>
+                    <Link to="/shoppingCart" className={styles.cartLink}><img src={cart} alt='icon' style={{width:"30px"}} /></Link>
+                    <span className={styles.cartNum}>{state.itemsCounter}</span>
                 </div>
             </div>
         </div>

@@ -7,46 +7,51 @@ import { cartContext } from "../context/CartContextProvider";
 //shared
 import Cart from "./shared/Cart";
 
+// style
+import styles from "./ShoppingCart.module.css"
+
 const ShoppingCart = () => {
   const { state, dispatch } = useContext(cartContext);
   return (
-    <div>
+    <div className={styles.container}>
       <div>
         {state.selectedItems.map((item) => (
           <Cart key={item.id} data={item} />
         ))}
       </div>
-      {state.itemsCounter > 0 && (
-        <div>
-          <p>
-            <span>Total Items:</span>
-            {state.itemsCounter}
-          </p>
-          <p>
-            <span>Total Payments:</span>
-            {state.total}
-          </p>
+      <div className={styles.information}>
+        {state.itemsCounter > 0 && (
           <div>
-            <button onClick={() => dispatch({ type: "CLEAR" })}>Clear</button>
-            <button onClick={() => dispatch({ type: "CHEKOUT" })}>
-              Checkout
-            </button>
+            <p>
+              <span>Total Items:</span>
+              {state.itemsCounter}
+            </p>
+            <p>
+              <span>Total Payments:</span>
+              {state.total}
+            </p>
+            <div>
+              <button onClick={() => dispatch({ type: "CLEAR" })}>Clear</button>
+              <button onClick={() => dispatch({ type: "CHEKOUT" })}>
+                Checkout
+              </button>
+            </div>
           </div>
-        </div>
-      )}
-      {state.checkout && (
-        <div>
-          <p>Check Out Successfully</p>
-          <Link to="/store">Buy More</Link>
-        </div>
-      )}
+        )}
+        {state.checkout && (
+          <div>
+            <p>Check Out Successfully</p>
+            <Link to="/store">Buy More</Link>
+          </div>
+        )}
 
-      {!state.checkout && state.itemsCounter === 0 && (
-        <div>
-          <p>Do you want to buy?</p>
-          <Link to="/store">Back To Shop</Link>
-        </div>
-      )}
+        {!state.checkout && state.itemsCounter === 0 && (
+          <div>
+            <p>Do you want to buy?</p>
+            <Link to="/store">Back To Shop</Link>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
