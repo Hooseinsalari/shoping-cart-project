@@ -1,28 +1,24 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from "react";
 
 // context
-import { ProductsContext } from '../context/ProductsContextProvider';
+import { ProductsContext } from "../context/ProductsContextProvider";
 
 // component
-import Product from './shared/Product';
+import Product from "./shared/Product";
 
 // style
 import styles from "./Store.module.css";
 
 const Store = () => {
+  const products = useContext(ProductsContext);
 
-    const products = useContext(ProductsContext)
- 
-    return (
-        <div className={styles.container}>
-            {
-                products.map((product) => <Product
-                    key={product.id}
-                    productData={product}
-                />)
-            }           
-        </div>
-    );
+  return (
+    <div className={styles.container}>
+      {products.map((product) => (
+        <Product key={product.id} productData={product} />
+      ))}
+    </div>
+  );
 };
 
 export default Store;

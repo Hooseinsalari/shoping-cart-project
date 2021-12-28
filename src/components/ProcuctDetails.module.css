@@ -1,31 +1,31 @@
 .container {
-    padding: 20px;
-    margin: 30px;
-    background-color: #fff;
-    margin-top: 150px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
+  padding: 20px;
+  margin: 30px;
+  background-color: #fff;
+  margin-top: 150px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
 }
 
 .proImg {
-    width: 200px;
+  width: 200px;
 }
 
 .proTitle {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .proPrice {
-    margin: 20px 0;
-    background-color: green;
-    width: 70px;
-    text-align: center;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 18px;
-    color: #fff;
+  margin: 20px 0;
+  background-color: green;
+  width: 70px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
 }
 
 .proDesc {
-    font-size: 18px;
+  font-size: 18px;
 }

@@ -1,150 +1,92 @@
-/* .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    padding: 15px;
-    border: 1px solid silver;
-    margin-bottom: 20px;
-    border-radius: 6px;
-}
-
-.button {
-    border: none;
-    outline: none;
-    margin: 3px;
-    font-size: 15px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 3px 5px;
-    cursor: pointer;
-    font-size: 18px;
-    width: 30px;
-    background-color: #27ae60;
-    color: #fff;
-}
-
-.removeBtn {
-    border: none;
-    outline: none;
-    margin: 3px;
-    font-size: 15px;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;  
-    height: 28px;
-    width: 31px;
-    font-size: 20px;
-    background-color: #27ae60;
-    color: #fff;
-}
-
-.removeBtn img {
-    width: 14px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px;
+  border: 1px solid silver;
+  margin-bottom: 20px;
+  border-radius: 6px;
 }
 
 .image {
-    width: 130px;
-    height: 150px;
+  width: 80px;
+  height: 110px;
+}
+
+.information {
+  text-align: left;
+}
+
+.information:first-child {
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.information:last-child {
+  color: #34a853;
+  font-weight: bold;
 }
 
 .quantity {
-    background-color: #27ae60;
-    width: 20px;
-    text-align: center;
-    color: #fff;
-    border-radius: 5px;
-} */
+  background: orange;
+  width: 25px;
+  height: 25px;
+  display: inherit;
+  line-height: 25px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    padding: 15px;
-    border: 1px solid silver;
-    margin-bottom: 20px;
-    border-radius: 6px;
-  }
-  
-  .image {
-    width: 80px;
-    height: 110px;
-  }
-  
-  .information {
-    text-align: left;
-  }
-  
-  .information:first-child {
-    color: #1a73e8;
-    margin-bottom: 10px;
-  }
-  
-  .information:last-child {
-    color: #34a853;
-    font-weight: bold;
-  }
-  
-  .quantity {
-    background: orange;
-    width: 25px;
-    height: 25px;
-    display: inherit;
-    line-height: 25px;
-    border-radius: 3px;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .buttonContainer button {
-    background-color: #1a73e8;
-    border: none;
-    color: #fff;
-    height: 30px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    width: 30px;
-    font-size: 1.6rem !important;
-    font-weight: bold;
-    line-height: 30px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    margin-left: 5px;
-  }
-  
-  .buttonContainer img {
-    width: 20px;
-  }
+.buttonContainer button {
+  background-color: #1a73e8;
+  border: none;
+  color: #fff;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 30px;
+  font-size: 1.6rem !important;
+  font-weight: bold;
+  line-height: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-left: 5px;
+}
+
+.buttonContainer img {
+  width: 20px;
+}
 
 @media (max-width: 470px) {
-    .container {
-      flex-direction: column;
-    }
-  
-    .image {
-      width: 150px;
-    }
-  
-    .information {
-      text-align: center;
-    }
-  
-    .information:first-child {
-      margin: 30px 0 20px;
-    }
-  
-    .information:last-child {
-      margin: 20px 0 30px;
-    }
-  
-    .quantity {
-      margin: 0 0 10px;
-    }
-  
-    .buttonContainer {
-      margin: 20px 0 20px;
-    }
+  .container {
+    flex-direction: column;
   }
+
+  .image {
+    width: 150px;
+  }
+
+  .information {
+    text-align: center;
+  }
+
+  .information:first-child {
+    margin: 30px 0 20px;
+  }
+
+  .information:last-child {
+    margin: 20px 0 30px;
+  }
+
+  .quantity {
+    margin: 0 0 10px;
+  }
+
+  .buttonContainer {
+    margin: 20px 0 20px;
+  }
+}

@@ -1,12 +1,10 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    /* padding: 20px; */
-    box-sizing: border-box;
-    margin: 30px;
-    /* padding: 20px; */
-    margin-top: 130px;
-    z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 30px;
+  margin-top: 130px;
+  z-index: 5;
 }
