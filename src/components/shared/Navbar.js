@@ -5,20 +5,18 @@ import { Link } from 'react-router-dom';
 import { cartContext } from '../../context/CartContextProvider';
 
 // icons
-import cart from "../../svg/cart.svg"
+import cart from "../../svg/cart.svg";
 
 // styles
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-
-    const {state} = useContext(cartContext)
+    const {state} = useContext(cartContext);
 
     return (
         <div className={styles.navContainer}>
             <div className={styles.container}>
                 <div className={styles.linkContainer}>
-                    <Link to="/" className={styles.link}>Home</Link>
                     <Link to="/store" className={styles.link}>Product</Link>
                 </div>
                 <div className={styles.cart}>

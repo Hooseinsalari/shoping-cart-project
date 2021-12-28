@@ -12,8 +12,9 @@ const ProductDetails = (props) => {
     const product = data[id - 1]
     return (
         <div className={styles.container}>
-            <img src={product.image} className={styles.proImg}/>
+            <img src={product.image} className={styles.proImg} alt="product"/>
             <h3 className={styles.proTitle}>{product.title}</h3>
+            <p className={styles.proPrice}>{product.price}</p>
             <p className={styles.proDesc}>{product.description}</p>
         </div>
     );

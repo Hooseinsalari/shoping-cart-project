@@ -34,7 +34,7 @@ const Product = ({ productData }) => {
                 dispatch({ type: "REMOVE_ITEM", payload: productData })
               }
             >
-              <img src={trash} style={{width:"14px", fontWeight:"bold"}} />
+              <img src={trash} style={{width:"14px", fontWeight:"bold"}} alt="trash" />
             </button>
           )}
            

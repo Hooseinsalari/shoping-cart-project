@@ -7,7 +7,6 @@ import Store from './components/Store';
 import ProductDetails from './components/ProductDetails';
 import Navbar from './components/shared/Navbar';
 import ShoppingCart from './components/ShoppingCart';
-import HomePage from './components/HomePage';
 
 // context
 import ProductsContextProvider from './context/ProductsContextProvider';
@@ -21,8 +20,7 @@ function App() {
         <Switch>
           <Route path="/details/:id" component={ProductDetails} />
           <Route path="/shoppingCart" component={ShoppingCart} />
-          <Route path="/store" component={Store} />
-          <Route path="/" component={HomePage} />
+          <Route path="/" component={Store} />
         </Switch>
       </CartContextProvider>
     </ProductsContextProvider>

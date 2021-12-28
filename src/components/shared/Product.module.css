@@ -1,92 +1,94 @@
 .cartContainer {
-    background-color: #fff;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: all 0.3s ease-in-out;
+  background-color: #e0e0e0;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  transition: all 0.3s ease-in-out;
 }
 
 .cartContainer:hover {
-    transform:translateY(-4px);
-    transition: all 0.3s ease-in-out;
+  transform: translateY(-4px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(17, 17, 26, 0.3) 0px 8px 24px,
+    rgba(17, 17, 26, 0.3) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .information {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .img {
-    width: 200px;
-    height: 250px;
-    border-radius: 10px;
-    
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
 }
 
 .cartFooter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 34px;
 }
 
 .detailsLink {
-    color: #27ae60;
-    text-decoration: none;
-    font-size: 17px;
+  color: #15803d;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .button {
-    border: none;
-    outline: none;
-    margin: 3px;
-    font-size: 15px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 3px 5px;
-    cursor: pointer;
-    font-size: 18px;
-    width: 30px;
-    background-color: #27ae60;
-    color: #fff;
+  border: none;
+  outline: none;
+  margin: 3px;
+  font-size: 15px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 3px 5px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 30px;
+  background-color: #15803d;
+  color: #fff;
 }
 
 .button span {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .deleteButton {
-    border: none;
-    outline: none;
-    margin: 3px;
-    font-size: 15px;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;  
-    height: 29px;
-    width: 31px;
-    font-size: 20px;
-    background-color: #27ae60;
-    color: #fff;
+  border: none;
+  outline: none;
+  margin: 3px;
+  font-size: 15px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  height: 29px;
+  width: 31px;
+  font-size: 20px;
+  background-color: #15803d;
+  color: #fff;
 }
 
 .addBtn {
-    border: none;
-    outline: none;
-    margin: 3px;
-    font-size: 15px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 3px 5px;
-    cursor: pointer;
-    font-size: 17px;
-    background-color: #27ae60;
-    color: #fff;
+  border: none;
+  outline: none;
+  margin: 3px;
+  font-size: 15px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 3px 5px;
+  cursor: pointer;
+  font-size: 17px;
+  background-color: #15803d;
+  color: #fff;
 }
 
 .addBtn:hover {
-  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+  box-shadow: rgba(39, 174, 96, 0.2) 0 6px 12px;
 }
